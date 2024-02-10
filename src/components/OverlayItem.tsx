@@ -1,6 +1,7 @@
-import { Avatar, Flex } from "antd";
+import { Avatar } from "antd";
 import { Typography } from "antd";
 import React, { ReactNode } from "react";
+import MyButton from "./MyButton";
 
 const { Title, Text } = Typography;
 
@@ -8,14 +9,15 @@ interface Props {
   children: ReactNode;
 }
 
-const Judge = ({ children }: Props) => {
+const OverlayItem = ({ children }: Props) => {
   return (
-    <Flex>
+    <>
       <Avatar></Avatar>
       <Title>{children}</Title>
       <Text></Text>
-    </Flex>
+      <MyButton size="small">Add</MyButton>
+    </>
   );
 };
 
-export default Judge;
+export default OverlayItem;
