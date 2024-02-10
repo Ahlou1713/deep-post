@@ -26,6 +26,7 @@ const MyCard: React.FC<CardProps> = ({
         display: "flex",
         flexDirection: "column",
         padding: 0,
+        backgroundColor: "#181B23",
       }}
     >
       <div
@@ -36,9 +37,11 @@ const MyCard: React.FC<CardProps> = ({
           padding: 0,
         }}
       >
-        <img src={imageUrl} alt="" style={{ width: 80, height: 85 }} />
+        <img src={imageUrl} alt="" style={{ width: 90, height: 90 }} />
         <div>
-          <Title level={5}>{title}</Title>
+          <Title level={5} style={{ color: "white" }}>
+            {title}
+          </Title>
           <Text
             style={{
               fontSize: "11px",
@@ -46,6 +49,7 @@ const MyCard: React.FC<CardProps> = ({
               borderRadius: 10,
               padding: "3px",
               margin: "5px",
+              color: "white",
             }}
           >
             Date: {date}
@@ -58,6 +62,7 @@ const MyCard: React.FC<CardProps> = ({
                 borderRadius: 10,
                 padding: "3px",
                 margin: 5,
+                color: "white",
               }}
             >
               Participants: {participants}
@@ -68,6 +73,7 @@ const MyCard: React.FC<CardProps> = ({
                 border: "2px solid #E84234",
                 borderRadius: 10,
                 padding: "3px",
+                color: "white",
               }}
             >
               Prize: {prize}

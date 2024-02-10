@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <SideBar />
+
       <Space>
         <Button type="primary">Primary Button</Button>
         <Input placeholder="Type here..."></Input>
